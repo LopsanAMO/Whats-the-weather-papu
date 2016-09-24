@@ -24,7 +24,25 @@
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Jg-3A-Jzc" userLabel="TextContainer">
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciudad de México" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjh-iI-53M">
+                                        <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="60"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="90ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8S3-33-JPN">
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="90"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9261732157" green="0.71352643029999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="xjh-iI-53M" firstAttribute="centerX" secondItem="1Jg-3A-Jzc" secondAttribute="centerX" id="Bs4-kE-PnG"/>
+                                    <constraint firstItem="xjh-iI-53M" firstAttribute="top" secondItem="1Jg-3A-Jzc" secondAttribute="topMargin" constant="16" id="DSL-vy-amL"/>
+                                    <constraint firstItem="8S3-33-JPN" firstAttribute="centerX" secondItem="1Jg-3A-Jzc" secondAttribute="centerX" id="SkR-aI-2Hu"/>
+                                    <constraint firstItem="8S3-33-JPN" firstAttribute="top" secondItem="xjh-iI-53M" secondAttribute="bottom" constant="16" id="tzD-ts-cy9"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.49507302814107357" green="0.8090847366976468" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
