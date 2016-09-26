@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -17,7 +17,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud_sm" translatesAutoresizingMaskIntoConstraints="NO" id="5zM-Br-Bj8">
@@ -47,19 +47,45 @@
                         </subviews>
                         <color key="backgroundColor" red="0.49507302814107357" green="0.8090847366976468" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="5zM-Br-Bj8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3BG-He-J4d"/>
+                            <constraint firstItem="1Jg-3A-Jzc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="3e6-eo-rPL"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Jg-3A-Jzc" secondAttribute="bottom" id="82F-nc-Bbx"/>
                             <constraint firstItem="5zM-Br-Bj8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BlF-b1-Wmn"/>
+                            <constraint firstItem="5zM-Br-Bj8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="G48-7O-gnC"/>
                             <constraint firstItem="5zM-Br-Bj8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="IvO-eO-rzM"/>
                             <constraint firstItem="1Jg-3A-Jzc" firstAttribute="top" secondItem="5zM-Br-Bj8" secondAttribute="bottom" constant="20" id="LeN-mK-clf"/>
                             <constraint firstItem="5zM-Br-Bj8" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="Lpo-dF-6NR"/>
                             <constraint firstItem="1Jg-3A-Jzc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="PkQ-Rb-3YI"/>
+                            <constraint firstItem="1Jg-3A-Jzc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="iHZ-Hb-yDH"/>
+                            <constraint firstItem="5zM-Br-Bj8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="inD-oS-zYF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1Jg-3A-Jzc" secondAttribute="trailing" constant="-20" id="wAc-sE-CDh"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3BG-He-J4d"/>
+                                <exclude reference="inD-oS-zYF"/>
+                                <exclude reference="3e6-eo-rPL"/>
+                                <exclude reference="iHZ-Hb-yDH"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="3BG-He-J4d"/>
+                                <exclude reference="BlF-b1-Wmn"/>
+                                <exclude reference="IvO-eO-rzM"/>
+                                <exclude reference="Lpo-dF-6NR"/>
+                                <include reference="inD-oS-zYF"/>
+                                <include reference="3e6-eo-rPL"/>
+                                <exclude reference="LeN-mK-clf"/>
+                                <exclude reference="PkQ-Rb-3YI"/>
+                                <include reference="iHZ-Hb-yDH"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="136.95652173913044"/>
+            <point key="canvasLocation" x="136.80000000000001" y="136.28185907046478"/>
         </scene>
     </scenes>
     <resources>
