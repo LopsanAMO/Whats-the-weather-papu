@@ -17,7 +17,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud_sm" translatesAutoresizingMaskIntoConstraints="NO" id="5zM-Br-Bj8">
@@ -25,10 +25,13 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Jg-3A-Jzc" userLabel="TextContainer">
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciudad de México" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjh-iI-53M">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciudad de México" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xjh-iI-53M">
                                         <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="60"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="40"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="90ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8S3-33-JPN">
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="90"/>
@@ -51,6 +54,7 @@
                             <constraint firstItem="1Jg-3A-Jzc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="3e6-eo-rPL"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Jg-3A-Jzc" secondAttribute="bottom" id="82F-nc-Bbx"/>
                             <constraint firstItem="5zM-Br-Bj8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BlF-b1-Wmn"/>
+                            <constraint firstItem="xjh-iI-53M" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="DXU-h5-56l"/>
                             <constraint firstItem="5zM-Br-Bj8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="G48-7O-gnC"/>
                             <constraint firstItem="5zM-Br-Bj8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="IvO-eO-rzM"/>
                             <constraint firstItem="1Jg-3A-Jzc" firstAttribute="top" secondItem="5zM-Br-Bj8" secondAttribute="bottom" constant="20" id="LeN-mK-clf"/>
